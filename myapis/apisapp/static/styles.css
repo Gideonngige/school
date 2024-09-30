@@ -1,0 +1,72 @@
+body{
+    background-color: aqua;
+}
+.shop{
+    background: rgb(21, 21, 137);
+    align-items: center;
+    justify-content: center;
+}
+.shop-header h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.items img{
+    margin: 10px;
+    border-radius: 10px;
+}
+.items input[type=button]{
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+}
+.items input[type=button]:hover{
+    background-color: black;
+}
+.shop-header input[type=search]{
+    width: 85%;
+    margin-left: 20px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color:rgb(21, 21, 137);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.shop-header input[type=submit]{
+    height: 30px;
+    width: 10%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.items-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    
+}
+.login-page .login-header{
+    color: white;
+    background-color: #418fd9;
+    max-width: 250px;
+    padding: 25px;
+    box-shadow: 0px 8px 16px 0px black;
+    border-radius: 10px;
+}

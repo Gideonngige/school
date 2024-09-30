@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form one</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body class="w3-blue">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">G-TECH SCHOOL</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Learning</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/static/images/form1_std.jpeg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">form one class</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/static/images/form2_std.jpeg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Form One</h1><br>
+      <p class="w3-large">G-tech School form one are the start up. They define the future of the school as the teacher shape the future. They are the most humble students in the school. Well behaved and goal oriented. <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium"></p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Academic Materials</h1><br>
+      <h4>Biology</h4>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/2f7YwCtHcgk" title="Introduction to cellular respiration | Cellular respiration | Biology | Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="w3-text-grey">Introduction to cellular respiration by Khan Academy</p><br>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/5KfHxF6Vhps" title="Introduction to the cell | Cells | High school biology | Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p class="w3-text-grey">Introduction to cell  by Khan Academy</p><br>
+    
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h4>Scrambled eggs</h4>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h4>Blueberry Pancakes</h4>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact Classteacher</h1><br>
+    <form action="{% url 'message' %}" method="post">
+      {% csrf_token %}
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">G-tech school</a></p>
+</footer>
+
+</body>
+</html>
